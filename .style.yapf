@@ -1,0 +1,54 @@
+[style]
+# Basic formatting
+indent_width = 2
+column_limit = 88
+use_tabs = false
+
+# Function and method definitions
+split_before_first_argument = true
+split_before_named_assigns = true
+dedent_closing_brackets = true
+
+# Line breaking
+split_before_logical_operator = false
+split_before_arithmetic_operator = false
+split_before_bitwise_operator = false
+split_complex_comprehension = true
+
+# Blank lines
+blank_line_before_nested_class_or_def = true
+blank_lines_around_top_level_definition = 2
+blank_lines_between_top_level_imports_and_variables = 1
+
+# Brackets and parentheses
+coalesce_brackets = false
+each_dict_entry_on_separate_line = true
+split_before_closing_bracket = true
+split_before_dict_set_generator = true
+
+# String formatting
+allow_multiline_lambdas = false
+allow_multiline_dictionary_keys = false
+allow_split_before_dict_value = true
+
+# Spaces
+space_between_ending_comma_and_closing_bracket = false
+spaces_before_comment = 2
+spaces_around_power_operator = true
+spaces_around_default_or_named_assign = true
+
+# Continuation and alignment
+continuation_align_style = SPACE
+continuation_splicer = false
+indent_closing_brackets = false
+indent_dictionary_value = true
+
+# Penalty system (higher = less likely to break)
+split_penalty_after_opening_bracket = 30
+split_penalty_after_unary_operator = 10000
+split_penalty_before_if_expr = 0
+split_penalty_comprehension = 80
+split_penalty_excess_character = 7000
+split_penalty_for_added_line_split = 30
+split_penalty_import_names = 0
+split_penalty_logical_operator = 300
