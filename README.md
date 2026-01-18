@@ -34,7 +34,7 @@ The list of informations metadata list have as follows:
 | **Year** | Year of composition | `1982` |
 | **Staff Count** | Two numbers indicating single-melody instrument staves and piano staves, separated by hyphen | `1-0` |
 
-**Bolded items** are information obtained by providing video title to Claude-3.5-Sonnet (`claude-3-5-sonnet-20241022`) model. The model receives a prompt containing the video ID and title, along with an example of the expected output format. It then analyzes the title to extract and structure this information, maintaining consistency with predefined categories and formats.
+**Bolded fields** are information obtained by providing video title to Claude-3.5-Sonnet (`claude-3-5-sonnet-20241022`) model. The model receives a prompt containing the video ID and title, along with an example of the expected output format. It then analyzes the title to extract and structure this information, maintaining consistency with predefined categories and formats.
 
 The Staff Count field deserves particular attention as it provides crucial information about score complexity. The
 format “X-Y” represents X single-melody instrument staves and Y piano staves. For example, “1-0” indicates one melodic
@@ -73,6 +73,24 @@ We devise a system for identifying the timing points of slide transitions in the
 The collected videos often feature letterboxes or pillarboxes, diverse aspect ratios, and inconsistent margins around contents; also, each slide contains an arbitrary number of musical systems alongside non-musical elements such as titles. To handle these irregularities, each musical system in a slide must be cropped and resized in a consistent format. Therefore, we label new annotations to fine-tune [YOLOv8](https://docs.ultralytics.com/models/yolov8)-based models for two different tasks: system-wise bounding box regression (boxes with blue borders), and staff height detection (average value of heights of read boxes), as depicted above. We use the models to produce regularized crops of each system, a process which we discuss further in [A.D of U-MusT's Supplementary Material.](https://ieeexplore.ieee.org/ielx8/10723155/10818373/11316398/supp1-3648794.pdf?arnumber=11316398)
 
 
+## HOW TO USE
+### Prepare Video Files
+Before running the code, please make sure you download all the videos from the metadata list `metadata/ytsv_metadata.csv` using your preferred method.  
+After downloading the videos, please organize them in a directory structure as follows:
+
+```
+<ANY DIR NAME YOU LIKE>/
+├── mp4/
+│   ├── <yt_id>.mp4
+│   ├── ...
+```
+
+Where `<yt_id>` corresponds to the YouTube video IDs listed in the metadata CSV file.
+
+### Run the Code
+Run the `run.sh` script after modifying the `DATSET_DIR` variable to point to the directory containing the `mp4/` folder with downloaded videos.
+
+
 ## Installation
 
 ```bash
@@ -107,9 +125,15 @@ youtube-score-video-dataset/
 
 ## TODO
 - [ ] add error logging
-- [ ] add TASLP citation
+- [ ] try-except blocks for main functions
 - [ ] add segmentation process based on the original file names
 
 
+## Acknowledgements
+If you publish material based on the YouTube Score Video Dataset, we request you to include a reference to paper **[1]** in your bibliography.
+
+## References
+**[1]** Jongmin Jung, Dongmin Kim, Sihun Lee, Seola Cho, Hyungjoon So, Irmak Bukey, Chris Donahue, and Dasaem Jeong. "U-MusT: A Unified Framework for Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio". IEEE Transactions on Audio, Speech and Language Processing. p1-16. 2025. https://doi.org/10.1109/TASLPRO.2025.3648794
+
 ## License
-This project is licensed under the MIT License.
+Source code in this repository is available under the MIT license.
