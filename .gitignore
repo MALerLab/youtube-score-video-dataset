@@ -1,3 +1,10 @@
+.DS_Store
+.vscode/
+
+__pycache__/
+
+checkpoints/
+
 notebooks_local/
 outputs/
 
@@ -5,12 +12,8 @@ graphs/
 pngs/
 pdfs/
 
-data/
 model/
 old/
 
-
-__pycache__/
-
-.DS_Store
-.vscode/
+debug_*.ipynb
+debug_*.py
