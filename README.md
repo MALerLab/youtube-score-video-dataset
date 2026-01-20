@@ -136,4 +136,5 @@ If you publish material based on the YouTube Score Video Dataset, we request you
 **[1]** Jongmin Jung, Dongmin Kim, Sihun Lee, Seola Cho, Hyungjoon So, Irmak Bukey, Chris Donahue, and Dasaem Jeong. "U-MusT: A Unified Framework for Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio". IEEE Transactions on Audio, Speech and Language Processing. p1-16. 2025. https://doi.org/10.1109/TASLPRO.2025.3648794
 
 ## License
-Source code in this repository is available under the MIT license.
+Source code in this repository is available under the MIT license.  
+Metadata in this repository `metadata/ytsv_metadata.csv` is available under the Creative Commons Attribution NonCommercial ShareAlike 4.0 International (CC BY NC SA 4.0) license.
