@@ -44,7 +44,9 @@ def format_logger_msg(logger_prefix, msg_dict):
 
 YOLO_MODELS_URLS = {
   'ls-yolo-system-v2.0.0.pt': 'https://github.com/MALerLab/ls-yolo/releases/download/system-v2/ls-yolo-system-v2.0.0.pt',
-  'ls-yolo-staff-height-v2.0.0.pt': 'https://github.com/MALerLab/ls-yolo/releases/download/staff-height-v2/ls-yolo-staff-height-v2.0.0.pt'
+  'ls-yolo-system-v3.0.0.pt': 'https://github.com/MALerLab/ls-yolo/releases/download/system-v3/ls-yolo-system-v3.0.0.pt',
+  'ls-yolo-staff-height-v2.0.0.pt': 'https://github.com/MALerLab/ls-yolo/releases/download/staff-height-v2/ls-yolo-staff-height-v2.0.0.pt',
+  'ls-yolo-staff-bbox-v1.0.1.pt': 'https://github.com/MALerLab/ls-yolo/releases/download/staff-bbox-v1/ls-yolo-staff-bbox-v1.0.1.pt'
 }
 
 
