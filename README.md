@@ -108,8 +108,12 @@ pipenv sync
 
 ### Metadata
 
+`metadata/ytsv_metadata.csv` carries one row per video with the following fields.
+
+| Field | Description | Example value |
+|---|---|---|
 | YT Id | Unique YouTube video identifier | `0oRyPLnPeFw` |
-| Title of Video | Original video title as displayed on YouTube |	`Walton - Passacaglia (1982) for solo cello [w/score]` |
+| Title of Video | Original video title as displayed on YouTube | `Walton - Passacaglia (1982) for solo cello [w/score]` |
 | User | User or channel name who uploaded the video | `AdamMusicWorld` |
 | Duration | Video length in MM:SS format | `10:06` |
 | **Composer Full Name** | Complete name of the composer | `William Walton` |
@@ -120,7 +124,7 @@ pipenv sync
 | **Piano Included** | Boolean indicating presence of piano part | `False` |
 | **String Included** | Boolean indicating presence of string instruments | `True` |
 | **Wind Included** | Boolean indicating presence of wind instruments | `False` |
-| **Voice Included** | Boolean indicating presence of vocal parts	| `False` |
+| **Voice Included** | Boolean indicating presence of vocal parts | `False` |
 | **Year** | Year of composition | `1982` |
 | **Staff Count** | Two numbers indicating single-melody instrument staves and piano staves, separated by hyphen | `1-0` |
 
