@@ -21,7 +21,7 @@ Official dataset repository for
 | Pipeline entry point | Runs segmentation and cropping over your videos | `run.sh`, `ytsv/__main__.py` |
 | YOLO detectors | System and staff-height models | [MALerLab/ls-yolo releases](https://github.com/MALerLab/ls-yolo/releases) |
 | Video files | — | **not redistributed** — download them yourself |
-| Tokenized data | Pre-computed image and audio tokens | [Hugging Face](#pre-tokenized-data) (gated) |
+| Tokenized data | Pre-computed image and audio tokens | [Hugging Face](#pre-tokenized-data) |
 
 ## Dataset at a glance
 
@@ -63,8 +63,8 @@ Clone the repository, or read `metadata/ytsv_metadata.csv` directly. No installa
 
 | Repository | Contents |
 |---|---|
-| [malerlab/ytsv-unirqvae3-ytsv](https://huggingface.co/datasets/malerlab/ytsv-unirqvae3-ytsv) | RQ-VAE score-image tokens |
-| [malerlab/ytsv-unidac4-ytsv](https://huggingface.co/datasets/malerlab/ytsv-unidac4-ytsv) | DAC performance-audio tokens |
+| [malerlab/ytsv-unirqvae3-ytsv (Hugging Face)](https://huggingface.co/datasets/malerlab/ytsv-unirqvae3-ytsv) | RQ-VAE score-image tokens |
+| [malerlab/ytsv-unidac4-ytsv (Hugging Face)](https://huggingface.co/datasets/malerlab/ytsv-unidac4-ytsv) | DAC performance-audio tokens |
 
 Both are sharded as one gzipped tar per collection group, since the uncompressed form exceeds a million small files. Each dataset card documents extraction and the token array layout.
 
